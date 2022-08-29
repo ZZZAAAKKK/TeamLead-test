@@ -9,17 +9,26 @@
     <link rel="stylesheet" href="./css/minireset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@700&family=Krub:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
     <section class="header">
         <video loop muted autoplay class="video-bg">
-            <source src="video/bg1.webm" type="video/webm">
             <source src="video/bg1.mp4" type="video/mp4">
+            <source src="video/bg1.webm" type="video/webm">
+            <source src="video/bg1.ogv" type="video/0gg">
         </video>
         <div class="container">
             <h1>LevelUp</h1>
-            <div class="header__product">
+            <div class="items">
                 <div class="header__product-photo">
                     <img src="./Images/prod.png" alt="photo LevelUp">
                 </div>
@@ -31,7 +40,7 @@
                     </ul>
                 </div>
             </div>
-            <button class="button">Заказать</button>
+            <a href="#order"><button>Заказать</button></a>
         </div>
     </section>
     <section class="composition container">
@@ -70,10 +79,40 @@
                 </div>
             </div>
         </div>
-        <button class="button">Заказать</button>
+        <a href="#order"><button>Заказать</button></a>
     </section>
     <section class="feedbacks container">
-        <div class="items">
+        <div class="owl-carousel owl-theme">
+            <div class="feedbacks__item">
+                <img src="./Images/bur.jpg" alt="Буратино">
+                <p>Буратино</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
+            <div class="feedbacks__item">
+                <img src="./Images/chip.jpg" alt="Чипполино">
+                <p>Чипполино</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
+            <div class="feedbacks__item">
+                <img src="./Images/rap.jpg" alt="Рапунцель">
+                <p>Рапунцель</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
+            <div class="feedbacks__item">
+                <img src="./Images/bur.jpg" alt="Буратино">
+                <p>Буратино</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
+            <div class="feedbacks__item">
+                <img src="./Images/chip.jpg" alt="Чипполино">
+                <p>Чипполино</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
+            <div class="feedbacks__item">
+                <img src="./Images/rap.jpg" alt="Рапунцель">
+                <p>Рапунцель</p>
+                <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
+            </div>
             <div class="feedbacks__item">
                 <img src="./Images/bur.jpg" alt="Буратино">
                 <p>Буратино</p>
@@ -90,7 +129,7 @@
                 <span>Это работает! Реально работает!!! Растёт! Ещё как растёт!!!</span>
             </div>
         </div>
-        <button class="button">Заказать</button>
+        <a href="#order"><button>Заказать</button></a>
     </section>
     <section class="promo container">
         <div class="items">
@@ -113,17 +152,39 @@
                 <li>Не имеет побочных эффектов и привыкания</li>
             </ul>
         </div>
-        <button class="button">Заказать</button>
+        <a href="#order"><button>Заказать</button></a>
     </section>
     <section class="order-form container">
         <h2>LevelUp</h2>
         <div class="order-form__timer">
-            <script src="http://megatimer.ru/get/2dba346d1d5e22f2605c4ea21413468e.js"></script>
+            <p>До конца акции осталось:</p>
+            <iframe
+                src="https://enter-media.org/widgets/2206337/?title=Countdown&layer1=&size1=7&color1=FFE100&font1=2162535&offset1=-35&width=400&height=80&css=2170984&timer5=30&sound=NO&volume=100%25&dots=No&treload=Y&frame=1"></iframe>
         </div>
         <div class="items">
-
+            <div class="order-form__item">
+                <div class="order-form__product">
+                    <img src="./Images/prod.png" alt="Level Up">
+                    <div class="order-form__price">
+                        <p>100000</p>
+                        <span>1000</span>
+                    </div>
+                </div>
+            </div>
+            <div id="order" class="order-form__item">
+                <form>
+                    <input type="text" placeholder="Имя Фамилия" name="name">
+                    <input type="number" placeholder="+79000000000" name="tel">
+                </form>
+                <button>Заказать</button>
+            </div>
         </div>
     </section>
 </body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</footer>
 
 </html>

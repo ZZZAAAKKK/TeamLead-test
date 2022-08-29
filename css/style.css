@@ -18,23 +18,29 @@
     object-fit: cover;
 }
 
-.header h1,
+h1,
 h2 {
+    font-family: 'Roboto', sans-serif;
     padding-top: 40px;
     color: rgb(255, 255, 255);
     font-size: 36px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+p,
+span,
+li {
+    font-family: 'Rubik', sans-serif;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-}
-
-.header__product {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
 }
 
 .header__product-photo {
@@ -58,16 +64,24 @@ h2 {
     line-height: 2em;
 }
 
-.button {
+button {
     margin-top: 100px;
     margin-bottom: 50px;
+    font-family: 'Atma', cursive;
     font-size: 20px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: red;
-    border-color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
 }
 
 .items {
@@ -81,7 +95,7 @@ h2 {
 
 .composition__block {
     display: block;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .composition__block_center {
@@ -94,12 +108,12 @@ h2 {
 }
 
 .composition__block_center img {
-    width: 150px;
+    width: 200px;
 }
 
 .composition_item {
     display: block;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .composition_item p {
@@ -110,18 +124,18 @@ h2 {
 }
 
 .composition_item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
 }
 
 .feedbacks {
-    background: radial-gradient(#cfd1d1, #367fa1);
+    background-image: url(../images/pattern.jpg);
 }
 
 .feedbacks__item {
     display: block;
-    margin-top: 100px;
+    margin: 100px auto 0;
     width: 200px;
     background-color: rgb(193, 193, 207);
     border-radius: 7px;
@@ -146,6 +160,16 @@ h2 {
     font-size: 16px;
     color: rgb(0, 0, 0);
     margin: 10px;
+}
+
+.owl-dots button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.owl-nav span {
+    font-size: 30px;
+    padding: 20px;
 }
 
 .promo {
@@ -178,8 +202,102 @@ h2 {
 }
 
 .order-form {
-    background-image: url(../images/pattern-squares-with-dotes.png);
+    background: radial-gradient(#cfd1d1, #367fa1);
 }
+
 .order-form__timer {
-   
+    margin-top: 50px;
+}
+
+.order-form__timer p {
+    font-size: 20px;
+}
+
+.order-form__item {
+    display: block;
+}
+
+.order-form__product img {
+    width: 150px;
+}
+
+.order-form__price {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.order-form__price p {
+    color: white;
+    font-size: 22px;
+    text-decoration: line-through;
+    margin-top: 8px;
+}
+
+.order-form__price span {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    animation: blinker 2s linear infinite;
+    padding-bottom: 50px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+input {
+    display: block;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    text-align: end;
+    visibility: hidden;
+    transform: translateY(-12px);
+}
+
+::-moz-placeholder {
+    text-align: end;
+    visibility: hidden;
+    transform: translateY(-12px);
+}
+
+:-moz-placeholder {
+    text-align: end;
+    visibility: hidden;
+    transform: translateY(-12px);
+}
+
+:-ms-input-placeholder {
+    text-align: end;
+    visibility: hidden;
+    transform: translateY(-12px);
+}
+
+:focus::-webkit-input-placeholder {
+    visibility: visible;
+}
+
+:focus::-moz-placeholder {
+    visibility: visible;
+}
+
+:focus:-moz-placeholder {
+    visibility: visible;
+}
+
+:focus:-ms-input-placeholder {
+    visibility: visible;
 }
